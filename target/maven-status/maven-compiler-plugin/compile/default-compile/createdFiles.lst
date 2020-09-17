@@ -1,0 +1,12 @@
+Tshop\Assignment.class
+Tshop\AbstractEvent$1.class
+Tshop\ReservationAccepted.class
+Tshop\AbstractEvent.class
+Tshop\ReservationCanceled.class
+Tshop\ReservationRequested.class
+Tshop\AssignmentApplication.class
+Tshop\AssignmentController.class
+Tshop\ReservationCancelRequested.class
+Tshop\AssignmentRepository.class
+Tshop\config\kafka\KafkaProcessor.class
+Tshop\PolicyHandler.class
