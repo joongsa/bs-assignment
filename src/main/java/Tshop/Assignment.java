@@ -21,14 +21,14 @@ public class Assignment {
         BeanUtils.copyProperties(this, reservationAccepted);
         reservationAccepted.setReservationId(this.getReservationId());
         reservationAccepted.setAgencyname(this.getAgencyName());
-        reservationAccepted.setStatus("예약접수완료");
+        reservationAccepted.setStatus("bookReserved");
         reservationAccepted.publishAfterCommit();
     }
     @PostRemove
     public void onPostRemove(){
         ReservationCanceled reservationCanceled = new ReservationCanceled();
         BeanUtils.copyProperties(this, reservationCanceled);
-        reservationCanceled.setStatus("예약취소완료");
+        reservationCanceled.setStatus("bookCanceled");
         reservationCanceled.publishAfterCommit();
     }
 
